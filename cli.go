@@ -20,7 +20,7 @@ func main() {
   app.Name = "pochi_echo"
   app.Usage = "Echo message"
   app.Action = func(c *cli.Context) {
-    println("Pochi")
+    println(c.Args()[0])
   }
 
   app.Run(os.Args)
